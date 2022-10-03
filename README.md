@@ -1,2 +1,2 @@
 # mixingsodas.github.io
- for hist390
+ hello world
