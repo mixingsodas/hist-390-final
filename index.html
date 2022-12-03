@@ -22,7 +22,19 @@ As you look around you, your head rushes with the work you have before you. Wher
 (if:visits is not 1)[You have already done this. Your time is best spent elsewhere.]\
 (if:visits is 1)[=You walk down to the kitchen to see what is being prepared for the party. All of the food looks wonderful, all traditional English meals. Perhaps if there are some foreign guests, they might want something familiar. You wonder if the Infanta Isabella of Spain received the invitation, and if she would be attending. Though she is Catholic and Spanish, you think there might be a chance she can give this country what you could not. You don&#39;t think she&#39;ll come; just in case, you ask the chefs to make some food from Spain. 
 
-[[keep getting ready]] </tw-passagedata><tw-passagedata pid="5" name="manage spending" tags="" position="725,450" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="pray" tags="" position="350,425" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="read correspondence" tags="" position="850,425" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="keep getting ready" tags="" position="600,575" size="100,100">(if:$getready is &quot;5&quot;)[You are ready. [[go to the party]].]\
+[[keep getting ready]] </tw-passagedata><tw-passagedata pid="5" name="manage spending" tags="" position="725,450" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="pray" tags="" position="350,425" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="read correspondence" tags="" position="850,425" size="100,100">(if:visits is not 1)[There&#39;s no more time for reading! The party will happen soon!]
+(else:)[Although you are very busy, you spare a moment to look over the day’s mail. Placed neatly on top, is an envelope addressed to you. You recognize the handwriting as belonging to your relation, King James VI of Scotland. You find the envelope already opened, it’s seal subtly sliced—no doubt the work of your Secretary and councilor Robert Cecil, who is charged with, among other duties, the safeguarding of your life from the wicked plots of conspirators. 
+
+In his letter, James writes to confirm his attendance at tonight’s fête. You are rather surprised to learn that he will be there personally, given his kingly responsibilities. It may be a sign that he takes his potential inheritance of your kingdom seriously. Perhaps it is also a sign of his laziness. 
+
+In this moment, you cannot help but remember his mother, your cousin, Mary. You similarly exchanged letters with the Scottish queen, although that was, of course, before her confinement in England brought an end to your cordial correspondence. 
+
+Mary’s execution—a regrettable affair, but a necessary one nonetheless—to your relief, did not provoke her son to move against you. James made a show of his great indignation, demanding handsome financial restitution, but Cecil smoothed things over, With a little bribery, the execution of his mother forgiven. He knew her even less than you did.
+
+You have no more time to dwell on the past. There is more to do
+(set:$getready to it +1)
+[[Continue Planning.|keep getting ready]]]
+</tw-passagedata><tw-passagedata pid="8" name="keep getting ready" tags="" position="600,575" size="100,100">(if:$getready is &quot;5&quot;)[You are ready. [[go to the party]].]\
 (if:$getready is not &quot;5&quot;)[=There is still so much to do. What would you like to do next?
 
 [[get dressed]]
