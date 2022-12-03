@@ -95,7 +95,23 @@ Cecil stares at a painting on the wall, as if he knew this day would come at lon
 [[find James]]
 [[find Edward Seymour]]
 [[find Arbella Stewart]]
-[[find Isabella]]</tw-passagedata><tw-passagedata pid="10" name="find James" tags="" position="375,775" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="find Edward Seymour" tags="" position="1025,1025" size="100,100">&quot;Find Edward Seymour, Lord Beauchamp?&quot; Robert Cecil scoffs incredulously. &quot;Your majesty, are you feeling quite well?&quot;
+[[find Isabella]]
+
+[[You have spoken with everyone you needed to hear from. It&#39;s time to choose.|die]]</tw-passagedata><tw-passagedata pid="10" name="find James" tags="" position="325,1150" size="100,100">You spy James speaking privately with Robert Cecil. They seem quite familiar. Your trusted councilor has been a vocal advocate of your cousin’s claims to succeed you. Cecil is a shrewd man. You wonder, darkly, if he has made some contingency arrangements with the Scottish king in the event of your death. None dare say it aloud, but they surely notice your wizened looks, your frail, aging body. You haven’t much time left.
+
+Cecil takes his leave. You see your chance to speak with him and hear his case. You can delay no longer. With the long years of your life nearly spent, you must make your decision regarding the succession tonight. 
+
+Your guests, however, are not content to leave you be. Although they do not crowd about you, you notice your company lingering, keenly observing your interaction with James. Despite your cousin&#39;s visible discomfort under the gaze of your many courtiers, you press on and discuss all manner of subjects.
+
+You discuss all manner of subjects. It&#39;s clear that James is learned and exceptionally well-read. You notice, however, that a number of the on-lookers seem amused, smirking at James’s every word. It must be his accent that has them so distracted, you surmise. His Scottish lilt is quite pronounced, and you can see how it might lead to moments of confusion and misunderstanding.
+
+Although you find their lack of decorum irritating, the crowd’s reaction brings to the forefront one potential issue with leaving your throne to your Scottish cousin. Regardless of your own sentiments, a ruler so obviously foreign may not be well received by your vassals and the English public generally. Without broad support, James’s kingship would flounder. 
+
+You could suggest he avail himself to become more outwardly English and downplay his Scottish origins. On the other hand, there were quite a few kings of England who were hardly English at all.
+
+[[Suggest he downplay his foreignness.]]
+
+[[Admonish your rude guests.]]</tw-passagedata><tw-passagedata pid="11" name="find Edward Seymour" tags="" position="1025,1025" size="100,100">&quot;Find Edward Seymour, Lord Beauchamp?&quot; Robert Cecil scoffs incredulously. &quot;Your majesty, are you feeling quite well?&quot;
 
 You had spent an hour tending the the guests of the party, exchanging niceties, but your target hadn&#39;t shown himself yet. You are speaking to Cecil to remedy this. 
 
@@ -188,7 +204,9 @@ Return to the:
 
 [[beginning]] 
 
-and try for a different ending!</tw-passagedata><tw-passagedata pid="16" name="james" tags="" position="350,1150" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="arbella stewart" tags="" position="625,1325" size="100,100">With the feeling of yoru heart slowing down, and the stares of yoru advisors you begin to write your will, which states that Arbella stewart will be the next sucessor.The next queen of England, and with gods will, will reign as worthy as you.Arbella was notified that instant of her death and the conmencmance of her reign began.</tw-passagedata><tw-passagedata pid="18" name="Isabella of Spain" tags="" position="875,1275" size="100,100">(if:$Isabella &lt; -1)[With your dying breath, you choose the Infanta Isabella of Spain as your successor. The turmoil breaks out almost immediately. The guests in the party all descend into madness at the announcement, and the commencement is turned to a bloodbath. For a good 60 days, the fighting doesn&#39;t stop. The castle is ravaged. Was this a good choice?]\
+and try for a different ending!</tw-passagedata><tw-passagedata pid="16" name="james" tags="" position="600,1875" size="100,100">In accordance with your wishes, your death sees King James VI of Scotland restyled as James I and VI, king of two kingdoms.
+
+(if:$james &lt; 0)[Unfortunately, the lords of England dislike their new king. They turn on him, and England is plunged into conflict.] (else:) [James becomes king. The transition is peaceful, and he rules England until his death.]</tw-passagedata><tw-passagedata pid="17" name="arbella stewart" tags="" position="750,1375" size="100,100">With the feeling of yoru heart slowing down, and the stares of yoru advisors you begin to write your will, which states that Arbella stewart will be the next sucessor.The next queen of England, and with gods will, will reign as worthy as you.Arbella was notified that instant of her death and the conmencmance of her reign began.</tw-passagedata><tw-passagedata pid="18" name="Isabella of Spain" tags="" position="875,1275" size="100,100">(if:$Isabella &lt; -1)[With your dying breath, you choose the Infanta Isabella of Spain as your successor. The turmoil breaks out almost immediately. The guests in the party all descend into madness at the announcement, and the commencement is turned to a bloodbath. For a good 60 days, the fighting doesn&#39;t stop. The castle is ravaged. Was this a good choice?]\
 (if:$isabella &gt; -2)[The choice is made. Isabella is notified immediately and soon enough, she accepts. Though many are resentful, England is consumed peacefully enough into Spain. ]</tw-passagedata><tw-passagedata pid="19" name="Welcome him warmly" tags="" position="975,525" size="100,100">(set:$isabella to it +1)&quot;I&#39;m glad you could make it,&quot; you say. The representative smiles and bows to you.
 &quot;I&#39;m so delighted to be here. When Her Majesty Queen Isabella saw you had invited her, she was pleased but understood the circumstances of the political situation, especially due to their distain for her Catholic faith...&quot; 
 
@@ -553,7 +571,45 @@ Both of you stand  and Seymour offers to follow you into the ballroom.
 
 [[Ask Edward about Spain]] 
 
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="46" name="Suggest he downplay his foreignness." tags="" position="200,1275" size="100,100">James bristles at your advice, but holds his tongue, not wanting to cross the woman who might yet give him another crown. The crowd continues to mock the &quot;barbarian&quot; Scottish king.
+(set: $james to it -1)
+Thankfully, the tension eases when [[Arbella Stuart walks by...]]</tw-passagedata><tw-passagedata pid="47" name="Admonish your rude guests." tags="" position="375,1325" size="100,100">A few pointed remarks chasten the crowd. Shamed, the gang of nobles say nothing further about James&#39;s heritage.
+(set: $James to it + 0)
+Thankfully, the tension eases when [[Arbella Stuart walks by...]]</tw-passagedata><tw-passagedata pid="48" name="Arbella Stuart walks by..." tags="" position="225,1450" size="100,100">Arbella, a member of James&#39;s Stuart dynasty, and a relation with her own claims to the English throne, walks past you both, stopping to curtsy briefly before hurrying to whatever distraction awaits her on the other side of the ballroom. James appears less-than impressed with his kinswoman. 
+
+His derisive remarks turn the conversation to the topic of sex. James asserts that your successor ought to be a male ruler, that the shortcomings of female rule should preclude them from inheritance. As a successful queen, you scoff, but his further explanations are worthy of consideration. He assures you that your pious determination to remain and unmarried and virginal put you above the rest. You need only look at your the reign of your half-sister and predecessor Mary to see the pitfalls. The dangers of childbirth present unique dangers for female monarchs, and further, queens may very well see her power and influence undermined by her husband. The stability of the monarchy and the realm, he argues would be more secure in a man&#39;s hands.
+
+[[You are inclined to agree.]]
+
+[[You disagree profusely.]]</tw-passagedata><tw-passagedata pid="49" name="You are inclined to agree." tags="" position="150,1600" size="100,100">(set: $james to it +1)
+You haven&#39;t much time left to confer with your cousin, but you ask one more question. How would he govern England regarding religion? The religious tension in England is high, after all. Like you he is a Protestant, but his mother was a Catholic, and many Scots refused to abandon their Church.
+
+James admits that he favors a sensitive, measured approach. He is Protestant, yes, but he&#39;s no zealot. He would prefer to keep the peace, and sees himself as a fairly tolerant ruler in that respect.
+
+[[Agree with his views.]]
+
+[[Tell him you would prefer to quell the Catholic threat by any means necessary.]]
+
+[[Tell him you are sympathetic to the Catholic cause.]]</tw-passagedata><tw-passagedata pid="50" name="You disagree profusely." tags="" position="325,1625" size="100,100"></tw-passagedata><tw-passagedata pid="51" name="Untitled Passage 1" tags="" position="875,1850" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="Agree with his views." tags="" position="25,1725" size="100,100">(set: $james to it + 2) Time grows short. You must move on.
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length &lt;= 2)[[Go to the party]]]
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length is 3)[Suddenly you feel  very faint...
+
+[[die]]]</tw-passagedata><tw-passagedata pid="53" name="Tell him you would prefer to quell the Catholic threat by any means necessary." tags="" position="200,1850" size="100,100">(set: $james to it + 0)Time grows short. You must move on.
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length &lt;= 2)[[Go to the party]]]
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length is 3)[Suddenly you feel  very faint...
+
+[[die]]]</tw-passagedata><tw-passagedata pid="54" name="Tell him you are sympathetic to the Catholic cause." tags="" position="400,1800" size="100,100">(set: $james to it -2)
+Time grows short. You must move on.
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length &lt;= 2)[[Go to the party]]]
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length is 3)[Suddenly you feel  very faint...
+
+[[die]]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
