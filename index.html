@@ -9,95 +9,220 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Hist 390 group 2 final.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Hist 390 group 2 final" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="F0D3BB04-BAC3-406B-A5C1-ADBAAECC4C5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="beginning" tags="" position="600,225" size="100,100">You wake up. As you gain consciousness, you remember........Today is the day of the party! You are Queen Elizabeth the first, and you are dying.  As you sit up and look around the room, you feel faint. You don&#39;t have much time left, which is why today is your one chance. If you can find a succesor at this party, the future of England is secured. 
+<tw-storydata name="Hist 390 group 2 final" startnode="3" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="F0D3BB04-BAC3-406B-A5C1-ADBAAECC4C5F" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="get dressed" tags="" position="475,425" size="100,100">Your servants assist you with the laborious task of dressing yourself in Tudor times. They powder a large wig, paint your face a luminous white, help you into a corset and large pleated gown. 
 
-[[get ready]]</tw-passagedata><tw-passagedata pid="2" name="get ready" tags="" position="600,350" size="100,100">(set:$getready to 0)\
+It takes hours. Your servants gossip and make small talk, and on other days you&#39;d be a delightful participant. But the matters that weigh on you now are far too grave and lofty for your handmaidens. 
+
+Once you are done there is still much to do, though your participation is tangential to the completion, naturally...
+
+[[prepare food]]
+
+[[pray]] 
+
+[[read correspondence]] 
+
+[[manage spending]]</tw-passagedata><tw-passagedata pid="2" name="read correspondence" tags="" position="875,450" size="100,100">You determine that from your invitations, King James of Scotland, Edward Seymour and Arbella Stuart will attend in person. Infanta Isabella of Spain will be represented by her ambassador. Sadly, you did not hear from Ann Stanley, pity that. 
+
+It&#39;s difficult to stay focused as there is only so much more you can do now, but reading helps take your mind off of it all...
+
+[[pray]] 
+
+[[prepare food]] 
+
+[[get dressed]] 
+
+[[manage spending]] 
+</tw-passagedata><tw-passagedata pid="3" name="beginning" tags="" position="600,75" size="100,100">You wake up. As you gain consciousness, you remember........Today is the day of the party! You are Queen Elizabeth the first, and you are dying.  As you sit up and look around the room, you feel faint. You don&#39;t have much time left, which is why today is your one chance. If you can find a succesor at this party, the future of England is secured. 
+
+[[get ready]]</tw-passagedata><tw-passagedata pid="4" name="get ready" tags="" position="600,200" size="100,100">(set:$getready to 0)\
 As you look around you, your head rushes with the work you have before you. Where should you start?
 
 [[get dressed]]
 [[prepare food]]
 [[manage spending]]
 [[read correspondence]]
-[[pray]]</tw-passagedata><tw-passagedata pid="3" name="get dressed" tags="" position="475,450" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="prepare food" tags="" position="600,475" size="100,100">(set:$getready to it +1)
+[[pray]]</tw-passagedata><tw-passagedata pid="5" name="prepare food" tags="" position="600,425" size="100,100">(set:$getready to it +1)
 (if:visits is not 1)[You have already done this. Your time is best spent elsewhere.]\
 (if:visits is 1)[=You walk down to the kitchen to see what is being prepared for the party. All of the food looks wonderful, all traditional English meals. Perhaps if there are some foreign guests, they might want something familiar. You wonder if the Infanta Isabella of Spain received the invitation, and if she would be attending. Though she is Catholic and Spanish, you think there might be a chance she can give this country what you could not. You don&#39;t think she&#39;ll come; just in case, you ask the chefs to make some food from Spain. 
 
-[[keep getting ready]] </tw-passagedata><tw-passagedata pid="5" name="manage spending" tags="" position="725,450" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="pray" tags="" position="350,425" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="read correspondence" tags="" position="850,425" size="100,100">(if:visits is not 1)[There&#39;s no more time for reading! The party will happen soon!]
-(else:)[Although you are very busy, you spare a moment to look over the day’s mail. Placed neatly on top, is an envelope addressed to you. You recognize the handwriting as belonging to your relation, King James VI of Scotland. You find the envelope already opened, it’s seal subtly sliced—no doubt the work of your Secretary and councilor Robert Cecil, who is charged with, among other duties, the safeguarding of your life from the wicked plots of conspirators. 
+[[keep getting ready]]</tw-passagedata><tw-passagedata pid="6" name="manage spending" tags="" position="725,425" size="100,100">For now the spending of your realm is stable. A party like this should be a drop in the bucket. 
 
-In his letter, James writes to confirm his attendance at tonight’s fête. You are rather surprised to learn that he will be there personally, given his kingly responsibilities. It may be a sign that he takes his potential inheritance of your kingdom seriously. Perhaps it is also a sign of his laziness. 
+You summon Robert Cecil to discuss the fiscal policy, foreign relations and the domestic situation. But it&#39;s hard to stay focused on the task at hand. 
 
-In this moment, you cannot help but remember his mother, your cousin, Mary. You similarly exchanged letters with the Scottish queen, although that was, of course, before her confinement in England brought an end to your cordial correspondence. 
+Suddenly, you feel dizzy. Cecil catches you and sits you down, calling for some water, and a doctor. You hush the latter request. 
 
-Mary’s execution—a regrettable affair, but a necessary one nonetheless—to your relief, did not provoke her son to move against you. James made a show of his great indignation, demanding handsome financial restitution, but Cecil smoothed things over, With a little bribery, the execution of his mother forgiven. He knew her even less than you did.
+Cecil is a man you can trust. He oversees large tracts of the realm, the law and the church. You decide to confide in him your dreadful suspiscions. 
 
-You have no more time to dwell on the past. There is more to do
-(set:$getready to it +1)
-[[Continue Planning.|keep getting ready]]]
-</tw-passagedata><tw-passagedata pid="8" name="keep getting ready" tags="" position="600,575" size="100,100">(if:$getready is &quot;5&quot;)[You are ready. [[go to the party]].]\
+&quot;Are you quite sure?&quot; He asks.
+
+&quot;Yes,&quot; you reply. 
+
+&quot;And you still want to have the party?&quot;
+
+&quot;Indeed. It is why I arranged it.&quot;
+
+Cecil stares at a painting on the wall, as if he knew this day would come at long last, and is just as powerless to prevent it. 
+
+&quot;Alright, your majesty, but I will be keeping a close eye on you. If you feel this happening again, just say the word and-&quot;
+
+&quot;I understand.&quot;
+
+[[read correspondence]] 
+
+[[get dressed]] 
+
+[[pray]] 
+
+[[prepare food]]
+
+</tw-passagedata><tw-passagedata pid="7" name="pray" tags="" position="350,450" size="100,100">(set:$getready to it +1)
+(if:visits is not 1)[You have already done this. Your time is best spent elsewhere.]\
+(if:visits is 1) [=You decide to clear your head, becasue of the overwhelmign feeling you have on the task you are hoping to accomplish at the party.You seek guidence and a sign and therefor you go to the shrine in the castle to do some prayers and reflect on the importance of the dicission on who your next successor will be.While praying your remember Arbella Stewart was a strong catholic, you don&#39;t know how your feel about that yet.]
+&lt;/style&gt;
+&lt;img src=data:image/jpeg;base64,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
+&lt;/div&gt;
+
+
+[[Go to the party]]</tw-passagedata><tw-passagedata pid="8" name="keep getting ready" tags="" position="600,575" size="100,100">(if:$getready is &quot;5&quot;)[You are ready. [[Go to the party]]  to the party]]]/
 (if:$getready is not &quot;5&quot;)[=There is still so much to do. What would you like to do next?
 
 [[get dressed]]
 [[pray]]
 [[prepare food]]
 [[manage spending]]
-[[read correspondence]]</tw-passagedata><tw-passagedata pid="9" name="Go to the party" tags="" position="600,675" size="100,100">You step into the ballroom arranged to show the guests the splendor of your favorite castle. Though it is quite overwhelming, you still have a goal in mind. Who would you like to speak with?
+[[read correspondence]]</tw-passagedata><tw-passagedata pid="9" name="Go to the party" tags="" position="600,700" size="100,100">You step into the ballroom arranged to show the guests the splendor of your favorite castle. Though it is quite overwhelming, you still have a goal in mind. Who would you like to speak with?
 
 [[find James]]
 [[find Edward Seymour]]
 [[find Arbella Stewart]]
-[[find Isabella]]
-[[find Anne Stanley]]</tw-passagedata><tw-passagedata pid="10" name="find James" tags="" position="475,850" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="find Edward Seymour" tags="" position="725,850" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="find Arbella Stewart" tags="" position="350,775" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="find Isabella" tags="" position="850,675" size="100,100">(if:visits &gt;= 2)[You have already spoken with Isabella&#39;s representative. Time is running out.
+[[find Isabella]]</tw-passagedata><tw-passagedata pid="10" name="find James" tags="" position="375,775" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="find Edward Seymour" tags="" position="1025,1025" size="100,100">&quot;Find Edward Seymour, Lord Beauchamp?&quot; Robert Cecil scoffs incredulously. &quot;Your majesty, are you feeling quite well?&quot;
+
+You had spent an hour tending the the guests of the party, exchanging niceties, but your target hadn&#39;t shown himself yet. You are speaking to Cecil to remedy this. 
+
+This man Seymour was known to be trouble. You had just recently released him from confinement in the tower of London, on account of his repeated efforts to un-bastardize himself. 
+
+You reply to Cecil: &quot;Indeed, I couldn&#39;t find him among the party guests all milling about here.&quot;
+
+Cecil finishes his champagne with a swig and continues in a hushed tone, &quot;Your majesty, I saw that you had requested his presence at this gathering, and when I recieved word of it, I had him detained outside. I would have intercepted the invitation had I caught the news of it as well.&quot; He stifles a belch as his finishes speaking. 
+
+You&#39;ve known Robert for many years now and trust him with your closest affairs. It isn&#39;t any man who would dare go against your will, much less admit it to your face. Most anyone else would have some serious explaining to do, but if he had any wool to pull over your eyes he has wasted far too many chances by now. That&#39;s how you know he has your best interests at heart. 
+
+You address Cecil again saying, &quot;I am not in the mood for repeating myself //ad nauseum//, Robert. Now where can I find the young rascall?&quot;
+
+Cecil gazes at you, pressing his thumbs together in anxious vexation. Finally, he flinches and sits up, saying, &quot;Right this way, your majesty...&quot;
+
+He leads you to the heavy oaken door, ornamented with wrought iron studs. They take the form of lions, bears and unicorns on the other side, the one meant to keep out suspiscious character. Cecil knocks on the door, and with a husky voice, booms, &quot;Make way for the Queen!&quot; The door opens a crack for verification (not just anyone can make that claim!) before opening wide enough to admit your entrance...
+
+You step outside into the hallway, the raucous party fading behind you as the door is shut again. The chatter of conversation is abruptly replaced by the clamor of two men shouting.
+
+&quot;I demand to be admitted!&quot; 
+
+&quot;Step away!&quot;
+
+&quot;I have an invitation, if you could read it, you&quot;
+
+The unbecoming conversation ends sharply as the figures in the hallway turn to face you. One is Edward Seymour, the younger Edward Seymour, Lord Beauchamp. The other is your trusted gaurd Paul who has a spear to the Edward&#39;s sternum. As they see you, Edward bows to the floor, nearly prostrate, and Paul steps in front of him to prevent a possible advance. 
+
+&quot;Your highness,&quot; Edward speaks in a hushed but clear tone, &quot;Thank you for recieving me at last!&quot; 
+
+Cecil ushers Paul aside and Paul obliges. But before he can return to his post at the door, Cecil grabs his arm, making it clear he must be more vigilant than usual with Seymour. 
+
+&quot;Well, if it isn&#39;t the bastard Seymour.&quot; Cecil snarks. &quot;They must be sleeping over there at the tower becuase I don&#39;t recall them letting ruffians like you free.&quot;
+
+Edward&#39;s eyes burn with indignation as he rises to his feet once again. He keeps his composure in the presence of the Queen, but might not in her absence. 
+
+You step forward confidently. Cecil is mainly worried about your safety, and if you show him that you aren&#39;t afraid, he&#39;ll know to relax. 
+
+&quot;Thank you, Lord Cecil, I think I can manage from here.&quot; 
+
+Robert slowly unclenches his fists and steps back hovering awkwardly a few steps away from the you and Edward. 
+
+&quot;I said, I can manage from here.&quot; You repeat yourself in a slow and deliberate tone. Cecil gets the message and opens the door, the hubub rising again, saying, &quot;If you need anything your majesty, I&#39;ll be inside.&quot; He shoots a look at Seymour before quipping, &quot;I suggest you behave yourself, now that there&#39;s at least one vacancy in the tower.&quot;
+
+The door slams with a loud bang, and in the quiet, Paul steps wordlessly back to the wall his eyes glued to the young noble. 
+
+&quot;Your highness,&quot; Edward resumes, stooping to kiss your ring, only to relaize you haven&#39;t offered him the privilege. If he&#39;s hurt by this, he shakes it easily. 
+
+&quot;Thank you for inviting me to the celebration. This is a great honor, not only for me, but for all the Seymours. My father sends his regards.&quot;
+
+You nod in acknowlegement. &quot;Yes, and how is he faring these days.&quot;
+
+Edward continues with a brief pause, as if he was expecting the subject matter to deviate, &quot;He is well, your majesty. He wishes the same for you.&quot;
+
+Seymour neglects to speak further about his family, and now it is up to you to continue the conversation:
+
+[[You may be wondering why I invited you here...]]
+
+[[Are you sure he does?]]
+
+</tw-passagedata><tw-passagedata pid="12" name="find Arbella Stewart" tags="" position="75,475" size="100,100">(enchant:?page,(bg:#a6c289))You go on the search for Arbella Stewart, you thought you saw her talking to non the other but your (text-colour:red)[secret lover Robert Dudly.]
+
+[[Go speak to Robert Dudly]]
+[[keep looking for Arbella]]
+</tw-passagedata><tw-passagedata pid="13" name="find Isabella" tags="" position="875,850" size="100,100">(if:visits &gt;= 2)[You have already spoken with Isabella&#39;s representative. Time is running out.
 
 [[Continue on your mission.]]]\
 (set: $Isabella to 1) Looking around, you realize you can&#39;t find Isabella in the crowd.  After asking around, you figure out she sent a representative in her place. It&#39;s probably better this way; who knows what kind of argument might have broken out if the other candidates found out she&#39;d been invited. You make your way to the representative, who eagerly reacts. 
 
 [[Welcome him warmly]] 
-[[Reproach Isabella for not coming herself]] </tw-passagedata><tw-passagedata pid="14" name="find Anne Stanley" tags="" position="600,900" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="die" tags="" position="600,1025" size="100,100">You are escorted to your own bed, doctors hovering around you. You know you are beyond saving. On your deathbed, you advisor asks the question you have been awaiting. 
+[[Reproach Isabella for not coming herself]] </tw-passagedata><tw-passagedata pid="14" name="die" tags="" position="675,1050" size="100,100">You are escorted to your own bed, doctors hovering around you. You know you are beyond saving. On your deathbed, you begin to reflect on everyone you have spoke to you consider the pros and cons. Your advisor asks the question you have been awaiting. 
 
 &quot;Who do you name to succeed you?&quot;
 
 Who will you choose?
 
-[[anne standley]]
 [[edward seymour]]
 [[james]]
 [[arbella stewart]]
-[[Isabella of Spain]]</tw-passagedata><tw-passagedata pid="16" name="anne standley" tags="" position="475,1150" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="edward seymour" tags="" position="925,1100" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="james" tags="" position="325,1125" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="arbella stewart" tags="" position="600,1175" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Isabella of Spain" tags="" position="750,1150" size="100,100">(if:$Isabella &lt; -1)[With your dying breath, you choose the Infanta Isabella of Spain as your successor. The turmoil breaks out almost immediately. The guests in the party all descend into madness at the announcement, and the commencement is turned to a bloodbath. For a good 60 days, the fighting doesn&#39;t stop. The castle is ravaged. Was this a good choice?]\
-(if:$isabella &gt; -2)[The choice is made. Isabella is notified immediately and soon enough, she accepts. Though many are resentful, England is consumed peacefully enough into Spain. ]</tw-passagedata><tw-passagedata pid="21" name="Welcome him warmly" tags="" position="975,550" size="100,100">(set:$isabella to it +1)&quot;I&#39;m glad you could make it,&quot; you say. The representative smiles and bows to you.
+[[Isabella of Spain]]</tw-passagedata><tw-passagedata pid="15" name="edward seymour" tags="" position="925,1150" size="100,100">With your last breath, you mutter, &quot;Edward Seymour.&quot;
+
+Before the year is out Seymour is coronated with his wife Honora at his side as consort. King Edward VII of England reigns over a period of expansion for England and it&#39;s power. A staunch Anglican, he is quick to approve a new English translation of the Bible, the now famous &quot;King Edward Version&quot;. He promotes it in all churches and is keen to tout its composition. His son William marries the Catholic Arbella Stuart, and while this leads to tension with William, Edward notices the smart political ramifications of such a move, and reconciles, remembering the feud between his mother and you. The union leads to a greater rapproachment of tensions between the crown and Rome, and religious compact is signed in 1620. 
+
+Edward is not as savvy when it comes to secular relations. Fearing that James will take his throne, he launches an invasion of Scotland ,the most brutal yet, destabilizing the region and fomenting the rise of early jacobite poltical sentiment earlier. James fights back and becomes the last monarch in the British isles to die in combat. He quotes Robert the Bruce saying, &quot;History is written by those who hang heroes&quot; before adding, &quot;but will not be hanged.&quot;
+
+Edward had much less luck in his invasion of Spain. Even with Dutch allies, the English Army only made it as far as Toledo before supplies ran out and mutiny ensued. The war was continued by his son William the third and is now known as the &#39;40 years war&#39;. 
+
+Edward&#39;s father, Edward, having fulfilled his lifelong political ambitions dies nine years early in 1612. Edward himself dies nine years late in 1621, due to his newfound lease on life. Choosing Edward addressed Elizabeth&#39;s concerns about preserving the power of church sovereign, and selecting a male English monarch. It did not address the concerns that he was a &#39;rascall&#39; (he is sometimes refered to as Edward the Rascal, especially by the Scottish National Party), nor unifying the thrones. Elizabeth may have been somewhat indifferent to the reforms in the public sphere brought about by Edward due to the fact that her convictions were mainly private and personal. 
+
+Return to the:
+
+[[beginning]] 
+
+and try for a different ending!</tw-passagedata><tw-passagedata pid="16" name="james" tags="" position="350,1150" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="arbella stewart" tags="" position="625,1325" size="100,100">With the feeling of yoru heart slowing down, and the stares of yoru advisors you begin to write your will, which states that Arbella stewart will be the next sucessor.The next queen of England, and with gods will, will reign as worthy as you.Arbella was notified that instant of her death and the conmencmance of her reign began.</tw-passagedata><tw-passagedata pid="18" name="Isabella of Spain" tags="" position="875,1275" size="100,100">(if:$Isabella &lt; -1)[With your dying breath, you choose the Infanta Isabella of Spain as your successor. The turmoil breaks out almost immediately. The guests in the party all descend into madness at the announcement, and the commencement is turned to a bloodbath. For a good 60 days, the fighting doesn&#39;t stop. The castle is ravaged. Was this a good choice?]\
+(if:$isabella &gt; -2)[The choice is made. Isabella is notified immediately and soon enough, she accepts. Though many are resentful, England is consumed peacefully enough into Spain. ]</tw-passagedata><tw-passagedata pid="19" name="Welcome him warmly" tags="" position="975,525" size="100,100">(set:$isabella to it +1)&quot;I&#39;m glad you could make it,&quot; you say. The representative smiles and bows to you.
 &quot;I&#39;m so delighted to be here. When Her Majesty Queen Isabella saw you had invited her, she was pleased but understood the circumstances of the political situation, especially due to their distain for her Catholic faith...&quot; 
 
 
 [[Support Isabella&#39;s faith]]
-[[Justify the people&#39;s apprehension]]</tw-passagedata><tw-passagedata pid="22" name="Reproach Isabella for not coming herself" tags="" position="975,650" size="100,100">(set:$isabella to it -1) You look sternly at the Spanish representative before you. 
+[[Justify the people&#39;s apprehension]]</tw-passagedata><tw-passagedata pid="20" name="Reproach Isabella for not coming herself" tags="" position="975,700" size="100,100">(set:$isabella to it -1) You look sternly at the Spanish representative before you. 
 &quot;Isabella couldn&#39;t make it herself?&quot;
 &quot;She and her court believed it would not be in your best interests, considering the circumstances...&quot; He looks up at you goofily. &quot;She thought it would be better, considering how they distain Catholicism...&quot;
 
 
 [[Support Isabella&#39;s faith]]
 [[Justify the people&#39;s apprehension]]
-</tw-passagedata><tw-passagedata pid="23" name="Support Isabella&#39;s faith" tags="" position="1075,550" size="100,100">(set:$isabella to it +1)&quot;Of course. I once was distainful towards those with a different faith to my own. But Isabella is a fine woman. Perhaps one day the two faiths could coexist.&quot; 
+</tw-passagedata><tw-passagedata pid="21" name="Support Isabella&#39;s faith" tags="" position="1100,525" size="100,100">(set:$isabella to it +1)&quot;Of course. I once was distainful towards those with a different faith to my own. But Isabella is a fine woman. Perhaps one day the two faiths could coexist.&quot; 
 The representative grins in delight. 
 &quot;she is a fine woman indeed. Unfortuately, many of the people believe a woman should not be leading them. I assume you would say differently, though.&quot; He looks at you expectantly. 
 
 [[Agree; women lead well.]]
-[[Too many queens]]</tw-passagedata><tw-passagedata pid="24" name="Justify the people&#39;s apprehension" tags="" position="1075,650" size="100,100">(set:$isabella to it -1)&quot;I understand. Many of us here do not take kindly to Catholics, especially after the damage my predicessor Mary did to this find country.&quot;
+[[Too many queens]]</tw-passagedata><tw-passagedata pid="22" name="Justify the people&#39;s apprehension" tags="" position="1100,725" size="100,100">(set:$isabella to it -1)&quot;I understand. Many of us here do not take kindly to Catholics, especially after the damage my predicessor Mary did to this find country.&quot;
 He looks slightly peeved. &quot;Surely that isn&#39;t how you view her. After all, Mary was only one woman. She should not leave a stain on the image of all Queens, should she?&quot;
 
 [[Agree; women lead well.]]
-[[Too many queens]]</tw-passagedata><tw-passagedata pid="25" name="Agree; women lead well." tags="" position="1175,550" size="100,100">(set:$isabella to it +1)You look at him blankly. &quot;Why, of course a woman can lead. Surely, after all I&#39;ve done, you can&#39;t say otherwise.&quot; 
+[[Too many queens]]</tw-passagedata><tw-passagedata pid="23" name="Agree; women lead well." tags="" position="1225,500" size="100,100">(set:$isabella to it +1)You look at him blankly. &quot;Why, of course a woman can lead. Surely, after all I&#39;ve done, you can&#39;t say otherwise.&quot; 
 This seems to have been the right answer, as the representative looks pleased. &quot;I am glad you think so. I would hope that after your rule, the popele of England would see Isabella as a fit ruler.&quot; 
 
 There is a moment where you lock eyes, and you know that he knows your purpose tonight. However, you don&#39;t let your facade slip. 
 
 
 A [[ruler]] like Isabella would benefit England.
-[[A foreign ruler would upset England.]] </tw-passagedata><tw-passagedata pid="26" name="Too many queens" tags="" position="1175,650" size="100,100">(set:$isabella to it -1)&quot;But we can&#39;t have too many queens, can we? After all, it is the man&#39;s job to look after the women in his life.&quot;
+[[A foreign ruler would upset England.]] </tw-passagedata><tw-passagedata pid="24" name="Too many queens" tags="" position="1225,750" size="100,100">(set:$isabella to it -1)&quot;But we can&#39;t have too many queens, can we? After all, it is the man&#39;s job to look after the women in his life.&quot;
 &quot;But-&quot; &quot;Also,&quot; you cut him off, &quot;if we allow so many women to take the throne, people will no longer be able to trust in what they know.&quot; You give him a pointed look, but he doens&#39;t give up. 
 &quot;What people know isn&#39;t always what&#39;s best for them. Who&#39;s to say that we shouldn&#39;t have a Queen, or perhaps, a //foreign// ruler?&quot; 
 
 A foreign [[ruler]] might not be so bad.
-[[A foreign ruler would upset England.]]</tw-passagedata><tw-passagedata pid="27" name="ruler" tags="" position="1275,550" size="100,100">(set:$isabella to it +1)Regaining your sense, you smile pleasntly. 
+[[A foreign ruler would upset England.]]</tw-passagedata><tw-passagedata pid="25" name="ruler" tags="" position="1350,550" size="100,100">(set:$isabella to it +1)Regaining your sense, you smile pleasntly. 
 &quot;I&#39;m certain Isabella would rule any country well.&quot;
 
 The Spanish representative nods, and gives you a knowing look. You hope this wasn&#39;t a bad idea. 
@@ -106,14 +231,14 @@ You smile radiantly, in a practiced way that hides your looming demise. &quot;Th
 
 As the spanish representative walaks away, you snap back to focus. 
 
-[[Continue on your mission.]]</tw-passagedata><tw-passagedata pid="28" name="A foreign ruler would upset England." tags="" position="1275,650" size="100,100">(set:$isabella to it -1)&quot;Are you suggesting that I allow my country to be consumed by Spain?&quot; Your voice betrays your insult. 
+[[Continue on your mission.]]</tw-passagedata><tw-passagedata pid="26" name="A foreign ruler would upset England." tags="" position="1350,700" size="100,100">(set:$isabella to it -1)&quot;Are you suggesting that I allow my country to be consumed by Spain?&quot; Your voice betrays your insult. 
 &quot;No, no,&quot; he attempts to rectify his earlier words, &quot;I&#39;m not suggesting anything like that, majesty.&quot; 
 &quot;Good. I suggest you keep Spanish business away from my throne.&quot; 
 He bows and scurries away. 
 
 That didn&#39;t go very well. [[Continue on your mission.]] 
 
-</tw-passagedata><tw-passagedata pid="29" name="Continue on your mission." tags="" position="600,775" size="100,100">(more:)[You begin to feel faint. quickly, you call over your trusted advisor (i dont remember his name). You realize that this may be the last moment of your life. 
+</tw-passagedata><tw-passagedata pid="27" name="Continue on your mission." tags="" position="600,850" size="100,100">(more:)[You begin to feel faint. quickly, you call over your trusted advisor (i dont remember his name). You realize that this may be the last moment of your life. 
 
 [[die]]]\
 Who else would you like to speak to?
@@ -121,9 +246,314 @@ Who else would you like to speak to?
 [[find Arbella Stewart]]
 [[find James]] 
 [[find Edward Seymour]] 
-[[find Anne Stanley]] 
 [[find Isabella]] 
-</tw-passagedata><tw-passagedata pid="30" name="go to the party" tags="" position="725,700" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="28" name="Go speak to Robert Dudly" tags="" position="25,650" size="100,100">(enchant:?page,(bg:#f8c4f8))Queen Elizabeth:&quot;Dudly&quot;
+
+(after:2s)[Dudly:&quot;Your majesty&quot;, he bows down ]
+
+(after:5s)[Queen:&quot;I saw you conversing with Arrbella Stewart momentarily ago, what was that about&quot;]
+
+(after:8s)[Dudly:&quot;Oh yes my Queen, nothing to get jelous about.We were just discussing how she&#39;s been at your court when she was a chils and how she is part of your family lineage, she is blood to the thrown and would be a wonderful succesor to your reign.&quot;]
+ 
+ (after:11s)[Queen:&quot;Jelouse, a queen jelouse, never. Do you know where she has gone?&quot;]
+ 
+ (after:14s)[Dudly:&quot;I&#39;m not certain but I think she wanted some space from the party&quot;]
+ 
+ &lt;/style&gt;
+&lt;img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Robert_Dudley.jpg/220px-Robert_Dudley.jpg
+&lt;/div&gt;
+
+[[keep looking for Arbella]] </tw-passagedata><tw-passagedata pid="29" name="keep looking for Arbella" tags="" position="175,650" size="100,100">You keep looking for Arbella and one of your favorite songs come on, and out of no where  Henry percy is asking for a dance with you, you were not aware that he was invited to the party and were very suspiciouse to what he was doing here.
+
+[[You go dance with Henry Percy]]
+[[Keep searching for Arbella]]</tw-passagedata><tw-passagedata pid="30" name="You go dance with Henry Percy" tags="" position="25,775" size="100,100">(enchant:?page,(bg:#f8c4f8))Queen:&quot;Henry Percy, I was not aware you were going to attend my party&quot;
+
+(after:2s)[Henry:&quot;I was not aware you were looking for a succesor&quot;]
+
+(after:4s)[Queen:&quot;I never said I was&quot;]
+
+(after:7s)[Henry:&quot;Word goes around, and may I say that Arbella stuart and I would be strong candidates together, for we are both strong cathlolics adn would restore religion to the reign.Thats why I came to your party I&#39;ve been in search of Arbella, so we could discuss these matters.&quot;]
+
+(after:10s)[Queen:&quot;Why thank you Henry for this new piece of information, I aswell am on the look for Arbella.Thank you for the dance I must excuse myself&quot;]
+
+&lt;/style&gt;
+&lt;img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Henry_Percy%2C_8th_Earl_of_Northumberland_%28c.1532-1585%29_%28posthumous%29.jpg/220px-Henry_Percy%2C_8th_Earl_of_Northumberland_%28c.1532-1585%29_%28posthumous%29.jpg
+&lt;/div&gt;
+
+[[Keep searching for Arbella]]
+
+</tw-passagedata><tw-passagedata pid="31" name="Keep searching for Arbella" tags="" position="175,775" size="100,100">You chose not to dance with Henry adn are more eager to find Arbella so you can have a serious conversation with her, without the inlunce of other people.You spot her leaving the ballroom and headed into the halls of the castle and before you you call out for her Bess Talbot,Arrebels grandmother crosses you path and greet you with the most ediquit and asks to speak with you.
+
+[[Speak to Bess Talbot]]
+[[Follow Arrbella through the castle]]</tw-passagedata><tw-passagedata pid="32" name="Speak to Bess Talbot" tags="" position="25,900" size="100,100">(enchant:?page,(bg:#f8c4f8))Bess:Curty&#39;s, &quot;Queen Elizabeth, it&#39;s such a delight to formally meet you.Thank you so much for invitng my grandaughter and I to your wonderful Party&quot;
+
+(after:3s)[Queen Elizabeth:&quot;Countess of Shewberry, of course the delight is mine, I hope you&#39;re enjoying everythign so far&quot;]
+
+(after:6s)[Bess:&quot;I am everyting is extravagant, I was currious as to what this event was held for adn i noticed the other here who were attending.My queen are you looking for your next successor&quot;]
+
+(after:9s)[Queen:Yes,yes I am, Countess.And your granddaughter is one of my most eligible candidiates, i just want to discuss few things with her.&quot;]
+
+(after:12s)[Bess:&quot;My queen I dont want to impose, but i do truely believe Arrebelle would be the best suited.Between us women we need to keep the balnce of power between women and men&quot;]
+
+(after:15s)[Queen:&quot;You have a very good point i appriciate your input, thank you countess I will continue to look for Arrebelle then.&quot;
+]
+
+&lt;/style&gt;
+&lt;img src=https://i.pinimg.com/originals/82/90/8a/82908a2d9431051f57b04a9421cc5122.png
+&lt;/div&gt;
+
+ [[Follow Arrbella through the castle]] </tw-passagedata><tw-passagedata pid="33" name="Follow Arrbella through the castle" tags="" position="175,900" size="100,100">You follow Arrbella through the castle wondering where she could be headed.With many thougth crossing through, you start feeling light headed, tired and overwhelmed. You see Arbella entering the shrine of the castel, you observe her at first and see that she is praying, you&#39;re not sure weather to interupt or leave her be and continue your mission and talk to other candidates.
+
+[[You go in and join her]]
+[[Continue on your mission.]] 
+
+</tw-passagedata><tw-passagedata pid="34" name="You go in and join her" tags="" position="175,1025" size="100,100">(enchant:?page,(text-colour:black)+(bg:#f4f4b3))Queen:&quot;Hello Arbella&quot;
+
+Arbella:(Not expecting the queen, she was startled) &quot;My queen&quot;
+
+&lt;/style&gt;
+&lt;img src=data:image/jpeg;base64,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
+&lt;/div&gt;
+
+Queen Elizabeth:&quot;Arbella I&#39;ve been meanig to speak to you.I have fallen I&#39;ll, I&#39;m no longer filled with life or have the stregth to continue to rule this country and I know there are many people who want to take my place, and iI&#39;ve heard many things about you good and bad, I learned you were planning on marrying Henry percy for instance, adn you are a catholic, how would you run a protestant country. But I would like to give you the opportunity to tell me why you would be the best option to take over my reign.&quot;
+
+Arbella:My queen I am honored with this opportunity adn i would never do anything thst would cause any distruss or threat to your reign. I have no idea what Henry Percy was saying but I do not wish to Marry him.And I would be a strong a powerful women leader as you are and i am willing to convert to protitentism for this country and I would the peopel of england would be reasured that the next successor myself is inteh bloodline of this lineage.I would do everything in my power to bring make sure Enlgland is a strong and powerful country.
+
+Queen:Collapses to the floor( The queen is dying)
+
+
+[[die]] </tw-passagedata><tw-passagedata pid="35" name="You may be wondering why I invited you here..." tags="" position="1225,1025" size="100,100">&quot;Young Edward... perception is not spared on the youth, and I gather you have your suspiscions as to why you have been summoned.&quot;
+
+A fearless glint alights in Edward&#39;s eye as he clicks his heels together and annoucnes, &quot;Yes, your highness, I have a clue as to why.&quot;
+
+You turn back to Edward, standing with rigid posture, his hands grasping the pockets of his garments. 
+
+&quot;And what might they be?&quot; You approach Edward interrogatively. Paul quits leaning against the wall and puts both hands on his spear.
+
+You notice a bead of sweat on Edward&#39;s forehead at this distance. He begins to stammer and fidgets with his pocket. Paul takes notice and briskly clears the distance across the hall. 
+
+Edward gulps as he produces a small pouch from his breast pocket. Paul&#39;s spear is now at his back. He holds it with both shaky hands as he extends his arms in offering. 
+
+&quot;F-for you, ma-majesty...&quot; His heavy breathing perforates his words, &quot;I-I figured you m-might make an example of m-me t-today.&quot; 
+
+He undoes the twine sash, revealing the golden currency of your realm. &quot;The next al-allotment of the debt.. my d-debt.&quot;
+
+Your recent preoccupation with choosing a sucessor has left you little time for your earthly credits and other such aspects of rule. It had slipped your mind that in 1596, You had fined the younger Edward Seymour £5,000. Of it, he still owed a considerable amount, despite your forgiveness of half the sum.
+
+&quot;I thought I&#39;d better bring the funds to repay my debt. I thought you&#39;d rather have that than my head...&quot; Edward admits sheepishly.
+
+This is certainly unexpected, and your view of the rascall Edward grows softer, as you consider your next move. 
+
+[[Thank you...]]
+
+[[This is isn&#39;t why I summoned you...]]</tw-passagedata><tw-passagedata pid="36" name="Are you sure he does?" tags="" position="1125,1175" size="100,100">&quot;Does he? Well, I suspect his wishes for me aren&#39;t so benign as you would have me believe.&quot;
+
+Edward opens his mouth to protest in grand style, before closing it and electing a different tact. &quot;Certainly not. My father wouldn&#39;t dare to wish for anything other than your health and perserverance, your highness.&quot;
+
+You turn away for a second to admire a vase of flowers in the hallway, as you continue, &quot;And I suspect, your sentiments are quite the same?&quot; 
+
+&quot;Yes, your highness,&quot; Edward answers enthusiastically. 
+
+You pluck a small flower from the display. A crocus. And hold it gingerly between your thumb and index finger as you contemplate your response.
+
+[[Rubbish.]]
+
+[[Ask Edward about Religion.]]
+
+[[Ask Edward about women]]
+
+[[Ask Edward about Scotland]]
+
+[[Ask Edward about Spain]]
+
+[[Ask Edward about personal matters]]
+</tw-passagedata><tw-passagedata pid="37" name="Rubbish." tags="" position="1125,1300" size="100,100">You crush the small flower in your hand. 
+
+&quot;Rubbish&quot;
+
+Edward suddenly looks nervous. &quot;Your Highness?&quot;
+
+&quot;Rubbish. That&#39;s all you&#39;ll ever be. Like your father before you, rubbish!&quot;
+
+Edward is taken aback but doesn&#39;t budge. He isn&#39;t quite sure how to respond to your clear rebuke. 
+
+You gesture to Paul who hurries to your side, indicating you want Edward taken away. 
+
+Edward loses his footing as he moves away from the door and down the hall. He stumbles and loses his purse, coins scattering about. He grasps in futility at them before picking himself up instead and making a mad dash with Paul in pursuit. 
+
+&quot;You haven&#39;t seen the last of Seymoooooourrr!&quot; He yells in flight. 
+
+You breath a sign, and make your way back to the door.
+
+(if:visits is 1)[You decide to return to the party, you don&#39;t want to neglect your guests...
+
+[[Go to the party]]]
+
+(if:visits is 2)[On your way in, you begin to feel very faint...
+
+[[die]]]</tw-passagedata><tw-passagedata pid="38" name="Ask Edward about Religion." tags="" position="1250,1300" size="100,100">&quot;So, Edward, what do you make of the relgious disputes in old England?&#39;
+
+Edward again seems completely surprised by this question.
+
+&quot;Well, um... I&#39;ve always fancied the Anglican communion. God&#39;s true church!&quot; 
+
+You are unimpressed by the flattery. 
+
+&quot;Ehm, I&#39;ve always seen you as the rightful sovereign of English souls!&quot;
+
+You interrupt him with a more difficult proposition, &quot;Very well, and how would you deal with a peer who confided his faith in the papacy?&quot;
+
+Edward loudly exclaims, &quot;Well, he&#39;s entitled to his own faith but he&#39;d be no peer of mine!&quot;
+
+You decide to change the subject to avoid further mutual embarassment. 
+
+[[Ask Edward about women]] 
+
+[[Ask Edward about Scotland]] 
+
+[[Ask Edward about personal matters]] 
+
+[[Ask Edward about Spain]] </tw-passagedata><tw-passagedata pid="39" name="Ask Edward about women" tags="" position="1000,1300" size="100,100">&quot;Interesting.&quot; Not.
+
+You pace down the hall a few steps before stopping and asking out of the blue, &quot;Do you think lowly of my sex? That I cannot lead due to it?&quot;
+
+Edward blusters, &quot;No, your highness, not at all. I think you are a capable and confident Queen. Heaven has smiled on England during your reign.&quot;
+
+You say nothing but to add, &quot;and what of the female sex in general?&quot; 
+
+Edward is at first not sure how to approach this subject.
+
+&quot;Well... um, I believe that women are -typically speaking- more suited to the nurturing role, but by God&#39;s design there are women skilled in the pursuits of men.&quot; 
+
+You provide no acknowlegement or affirmation, and he pushes on through the subject, &quot;Of course, I think highly of my own mother... and wife.&quot;
+
+After those remarks, Edward looks away from you. He is not sure how to broach the topic of his mother, whom you feuded with, nor his wife, whom you do not get along with either. 
+
+&quot;My personal experience has shaped my perceptions, your highness, but they are simply my observations only... I suppose they are my father&#39;s views, and he spoke very highly of, well, you, of course.&quot;
+
+You flashback momentarily to one summer long ago. The lad who stand before you now has a father, a scheming and plotting one, but one who once asked for your hand. You remember long days riding, hunting, by the fireside and laying in the meadow. Those were the days before you realized how dangerous a man can be. How a man can be a leaden anchor for your entire vision, and use his efficacious marriage to promote his own design. 
+
+&quot;Naturally, these are just my personal opinions...&quot;
+
+You snap out of the daydream, the warmth of yesterday&#39;s sun still on your cheeks for a moment?
+
+Perahps he has some insight? Should you probe for more in Edward&#39;s personal life?
+
+[[Ask Edward about personal matters]]
+
+[[Ask Edward about Religion.]] 
+
+[[Ask Edward about Scotland]] 
+
+[[Ask Edward about Spain]] </tw-passagedata><tw-passagedata pid="40" name="Ask Edward about Scotland" tags="" position="1125,1425" size="100,100">&quot;Hmm,&quot; Your words are sparse, &quot;and what of our neighbors to the north under James?&quot;
+
+Edward shrugs, &quot;I&#39;ve spent a few summers in Scotland. Lovely place but I suspect the people there take less of a liking to the English.&quot;
+
+You take his statement into consideration.
+
+&quot;Of course,&quot; he continues without warning, &quot;I wouldn&#39;t endeavor to excercise more control up north without another round of pacification.&quot; He turns to you and speaks seriously. &quot;and I&#39;m not sure how keen the English would be be with a Scotsman on the throne?&quot;
+
+&quot;What&#39;s that?&quot; you blurt out, not sure if you even heard the young rascall correctly.
+
+&quot;Oh, nothing, I&#39;m just not sure how the common English would think of old James.&quot;
+
+You decide to let the last remark slide. His honesty may be just what you need right now.
+
+[[Ask Edward about Religion.]] 
+
+[[Ask Edward about women]] 
+
+[[Ask Edward about Spain]] 
+
+[[Ask Edward about personal matters]] </tw-passagedata><tw-passagedata pid="41" name="Ask Edward about Spain" tags="" position="1250,1425" size="100,100">&quot;I see,&quot; you reply, your mind already having moved on. &quot;What do you make of the Spanish threat?&quot;
+
+Edward shuffles his feet, ready to capitalize on the moment, &quot;Your majesty, the Spanish have long sought to take English lands and your crown. You valiantly defended England against Phillip&#39;s scourge and I would-&quot;
+
+He stops abruptly with a perceptible pause before continuing.
+
+&quot;- I would continue to support you in the defense of the realm.&quot;
+
+Before yu can speak again, he thinks of something else to say, &quot;You know, I saw the Spnaish ambassador coming through the door earlier. He has a lot of nerve to show his face here.&quot;
+
+&quot;Do you suppose that I have a lot of nerve to invite him.&quot; You respond rather disarmingly.
+
+Seymour fumbles with his sentence a bit before saying, &quot;No, it&#39;s just... uncouth, but I suppose not as bad as well, you know who showing up.&quot;
+
+Edward finishes his short speech with a smile, hoping you&#39;ll forget his frequent //faux pas//
+
+[[Ask Edward about Religion.]] 
+
+[[Ask Edward about Scotland]] 
+
+[[Ask Edward about Spain]] 
+
+[[Ask Edward about personal matters]] </tw-passagedata><tw-passagedata pid="42" name="Ask Edward about personal matters" tags="" position="1000,1425" size="100,100">&quot;Tell me,&quot; You say as you place a steadying hand on the wall before continuing, &quot;What concerns you personally today as you attend the party...?&quot;
+
+Edward takes a deep breath, looking around in hesitation, and to assure that you, he and Paul are alone. 
+
+Edward gulps as he produces a small pouch from his breast pocket. Paul&#39;s spear is now at his back. He holds it with both shaky hands as he extends his arms in offering. 
+
+&quot;F-for you, ma-majesty...&quot; His heavy breathing perforates his words, &quot;I-I figured you m-might make an example of m-me t-today.&quot; 
+
+He undoes the twine sash, revealing the golden currency of your realm. &quot;The next al-allotment of the debt.. my d-debt.&quot;
+
+Your recent preoccupation with choosing a sucessor has left you little time for your earthly credits and other such aspects of rule. It had slipped your mind that in 1596, You had fined the younger Edward Seymour £5,000. Of it, he still owed a considerable amount, despite your forgiveness of half the sum. It&#39;s nothing to you, but it is enough to saddle a nobleman like Edward with a sullied reputation.
+
+&quot;I thought I&#39;d better bring the funds to repay my debt. I thought you&#39;d rather have that than my head...&quot; Edward admits sheepishly.
+
+This is certainly unexpected, and your view of the rascall Edward grows softer, as you consider your next move. 
+
+[[Thank you...]] 
+
+[[This is isn&#39;t why I summoned you...]] 
+
+[[Rubbish.]] </tw-passagedata><tw-passagedata pid="43" name="Thank you..." tags="" position="1350,1150" size="100,100">You decide to accept the repayment of Edward&#39;s debt. 
+
+&quot;There&#39;s one grand in there, my final payment in advance.&quot; Edward seems relieved that you accepted and cleared his debt.
+
+You smile and consider this unexpected display of maturity. Perhaps you were wrong about the young rascall. 
+
+You did invite him to the party after all, perhaps you should show him the way in, or would you like to continue speaking with him. 
+
+
+[[Go to the party]] 
+
+[[This is isn&#39;t why I summoned you...]] 
+
+[[Ask Edward...]]</tw-passagedata><tw-passagedata pid="44" name="This is isn&#39;t why I summoned you..." tags="" position="1475,1050" size="100,100">&quot;Edward... you should know this isn&#39;t why I summoned you.&quot; You stare at the crocus in your hand before looking at the young man.
+
+Edward looks puzzled, &quot;It&#39;s not?&quot; His hand flinches as he reaches for the coinpurse, but he thinks better of it at the last moment.&quot;
+
+&quot;No,&quot; you continue, &quot;I invited you to this party for a specific reason.&quot;
+
+&quot;Yes, your highness.&quot; Edward seems to be watching your words with bated breath. 
+
+&quot;I am hosting this party to determine my true sucessor. You have surprised me today with your honesty and are more favored in my eyes now than before.&quot;
+
+You take a seat on a large chest in the hallway. Paul keeps a watchful glace on you, and stands at attention, in part due to the annoncement, and in part to see if Edward has something else in his pockets. Meanwhile, Edward rushes to your side.
+
+&quot;Your majesty it&#39;s an honor...&#39;
+
+You raise a hand, &quot;It&#39;s important that no one speaks of this prematurely. You are a contender for the throne not my heir. (if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length &lt;= 2)[ There are still more guests to speak with.] (if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length &gt;= 3)[My decision is not yet final.]But as a token of goodwill, you may consider your parent&#39;s marriage valid. 
+
+Edward breathes deeply as he takes in the good news. He stoops to kiss your ring and this time you offer it. 
+
+Both of you stand  and Seymour offers to follow you into the ballroom.
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length &lt;= 2)[[Go to the party]]]
+
+(if:(history: where its name contains &quot;Go to the party&quot;)&#39;s length is 3)[Suddenly you feel  very faint...
+
+[[die]]]</tw-passagedata><tw-passagedata pid="45" name="Ask Edward..." tags="" position="1475,1275" size="100,100">What do you want to ask about?
+
+[[Ask Edward about Religion.]] 
+
+[[Ask Edward about women]] 
+
+[[Ask Edward about Scotland]] 
+
+[[Ask Edward about Spain]] 
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
